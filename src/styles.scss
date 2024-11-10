@@ -33,3 +33,47 @@
     flex: 1;
     padding: 20px;
 }
+
+/* styles.css o styles.scss */
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('/assets/fonts/LEMONMILK-Regular.otf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --unnamed-font-family-lemon-milk-pro-ftr: LEMON MILK Pro FTR;
+    --unnamed-font-family-fs-me: FS Me;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-80: 80px;
+    --unnamed-line-spacing-18: 18px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-character-spacing-0-75: 0.75px;
+    /* Colors: */
+    --unnamed-color-98a92a: #98A92A;
+    --unnamed-color-707070: #707070;
+    --unnamed-color-000000a6: #000000A6;
+    --unnamed-color-e1dfdd: #E1DFDD;
+    --unnamed-color-095751: #095751;
+    --unnamed-color-43752b: #43752B;
+    --unnamed-color-333333: #333333;
+    --unnamed-color-6a625a: #6A625A;
+    --unnamed-color-f1efee: #F1EFEE;
+    --unnamed-color-ffffff: #FFFFFF;
+    --unnamed-color-005650: #005650;
+    --unnamed-color-85a228: #85A228;
+    --unnamed-color-706961: #706961;
+    --unnamed-color-205000: #205000;
+}
+
+.unnamed-character-style-80 {
+    font-family: var(--unnamed-font-family-fs-me);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-80);
+    line-height: var(--unnamed-line-spacing-18);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+}

@@ -1,68 +1,99 @@
-/* section-cards.component.css */
-
 .section-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     /* Columna izquierda más ancha para Clientes */
-    grid-template-rows: 300px 150px 150px;
-    /* Alturas específicas para cada fila */
     grid-template-areas:
         "clientes mercado"
         "clientes marketing"
         "clientes investigacion";
-    gap: 20px;
-    margin-top: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin: 20px;
+    /* Ajuste de márgenes para mantener un espacio exterior */
+    max-width: 100%;
+    align-items: stretch;
+    justify-items: stretch;
 }
 
 /* Tarjeta grande para Clientes */
 .clientes-card {
     grid-area: clientes;
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
+    background-image: url(../../assets/clientes.png);
+    border-radius: 26px;
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s ease;
-    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 696px;
+    /* Altura mínima para mantener el tamaño original */
+    opacity: 1;
+    transition: background-image 0.3s ease-in-out;
 }
 
 /* Tarjeta para Mercado */
 .mercado-card {
     grid-area: mercado;
+    background-image: url(../../assets/Recuadro_Mercado_2x.png);
     background-size: cover;
     background-position: center;
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    min-height: 242px;
+    /* Altura mínima */
+    opacity: 1;
+    transition: background-image 0.3s ease-in-out;
 }
 
 /* Tarjeta para Herramientas de Marketing */
 .marketing-card {
     grid-area: marketing;
+    background-image: url(../../assets/Recuadro_Herramientas_2x.png);
     background-size: cover;
     background-position: center;
-    border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    min-height: 242px;
+    /* Altura mínima */
+    border-radius: 12px;
+    opacity: 1;
+    transition: background-image 0.3s ease-in-out;
 }
 
 /* Tarjeta para Equipo de Investigación */
 .investigacion-card {
     grid-area: investigacion;
+    background-image: url(../../assets/Recuadro_Equipo_2x.png);
     background-size: cover;
     background-position: center;
     border-radius: 12px;
+    /* Redondea las esquinas inferiores */
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    min-height: 162px;
+    /* Altura mínima */
+    opacity: 1;
+    transition: background-image 0.3s ease-in-out;
 }
 
-/* Efecto de hover en todas las tarjetas */
-.section-card:hover {
-    transform: scale(1.05);
+
+.clientes-card:hover {
+    background-image: url(../../assets/Recuadro_Clientes_Hover_2x.png);
 }
+
+.mercado-card:hover {
+    background-image: url(../../assets/Recuadro_Mercado_Hover_2x.png);
+}
+
+.marketing-card:hover {
+    background-image: url(../../assets/Recuadro_Herramientas_Hover_2x.png);
+}
+
+.investigacion-card:hover {
+    background-image: url(../../assets/Recuadro_Equipo_Hover_2x.png);
+}
+
 
 /* Estilos para la superposición de cada tarjeta */
 .section-overlay {
