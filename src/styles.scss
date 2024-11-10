@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css o app.component.css */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.active-link {
+    color: #007bff;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
