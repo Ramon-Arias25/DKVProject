@@ -1,0 +1,99 @@
+/* mercado.component.css */
+
+.mercado-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #6A625A;
+    /* Fondo oscuro para la cabecera */
+    padding: 30px;
+    border-radius: 12px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.mercado-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.mercado-subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Grid para las tarjetas del mercado */
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Estilo base para cada tarjeta */
+.market-card {
+    position: relative;
+    padding: 20px;
+    border-radius: 12px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.market-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Colores específicos para cada tarjeta */
+.gray-card {
+    background-color: #6A625A;
+}
+
+.green-card {
+    background-color: #98A92A;
+}
+
+.teal-card {
+    background-color: #095751;
+}
+
+.light-green-card {
+    background-color: #98A92A;
+}
+
+.dark-teal-card {
+    background-color: #095751;
+}
+
+.dark-gray-card {
+    background-color: #6A625A;
+}
+
+/* Estilo de los títulos de las tarjetas */
+.market-card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Estilo del icono de flecha */
+.icon {
+    align-self: flex-end;
+}
+
+.icon-arrow {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
