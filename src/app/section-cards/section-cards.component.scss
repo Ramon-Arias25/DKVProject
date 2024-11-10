@@ -1,0 +1,90 @@
+/* section-cards.component.css */
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* Columna izquierda más ancha para Clientes */
+    grid-template-rows: 300px 150px 150px;
+    /* Alturas específicas para cada fila */
+    grid-template-areas:
+        "clientes mercado"
+        "clientes marketing"
+        "clientes investigacion";
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Tarjeta grande para Clientes */
+.clientes-card {
+    grid-area: clientes;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+/* Tarjeta para Mercado */
+.mercado-card {
+    grid-area: mercado;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Tarjeta para Herramientas de Marketing */
+.marketing-card {
+    grid-area: marketing;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Tarjeta para Equipo de Investigación */
+.investigacion-card {
+    grid-area: investigacion;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de hover en todas las tarjetas */
+.section-card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para la superposición de cada tarjeta */
+.section-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-overlay h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.icon-arrow {
+    font-size: 1.5rem;
+    font-weight: bold;
+}

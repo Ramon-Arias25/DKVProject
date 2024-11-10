@@ -11,6 +11,7 @@ import { MercadoComponent } from './pages/mercado/mercado.component';
 import { HerramientasDeMarketingComponent } from './pages/herramientas-de-marketing/herramientas-de-marketing.component';
 import { EquipoDeInvestigacionComponent } from './pages/equipo-de-investigacion/equipo-de-investigacion.component';
 import { HeroComponent } from './hero/hero.component';
+import { SectionCardsComponent } from './section-cards/section-cards.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -32,7 +33,8 @@ const routes: Routes = [
     MercadoComponent,
     HerramientasDeMarketingComponent,
     EquipoDeInvestigacionComponent,
-    HeroComponent
+    HeroComponent,
+    SectionCardsComponent
   ],
   imports: [
     BrowserModule,
