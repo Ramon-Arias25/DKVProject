@@ -1,12 +1,14 @@
 /* equipo-de-investigacion.component.css */
 
 .investigacion-container {
-    background-color: #095751;
-    /* Fondo verde especificado */
+    background-image: url(../../../assets/EQUIPO/Cabecera_2x.png);
+    background-size: cover;
+    background-position: right;
+    min-height: 240px;
+    padding: 30px;
     border-radius: 12px;
     color: #FFFFFF;
-    padding: 40px;
-    max-width: 100%;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
