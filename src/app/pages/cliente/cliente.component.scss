@@ -1,7 +1,7 @@
 /* cliente.component.css */
 
 .cliente-container {
-    max-width: 1200px;
+    max-width: 950px;
     margin: auto;
     padding: 20px;
 }
@@ -10,8 +10,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #98A92A;
-    /* Color de fondo verde */
+    background-image: url(../../../assets/CLIENTES/Cabecera_2x.png);
+    background-size: cover;
+    background-position: right;
+    min-height: 240px;
     padding: 30px;
     border-radius: 12px;
     color: #FFFFFF;
@@ -19,9 +21,10 @@
 }
 
 .cliente-title {
-    font-size: 2.5rem;
+    font-family: Arial, sans-serif;
+    font-size: 5rem;
     font-weight: bold;
-    margin: 0;
+    margin-top: 10px;
     text-transform: uppercase;
 }
 
@@ -30,7 +33,6 @@
     margin-top: 10px;
 }
 
-/* Grid para las tarjetas de preguntas */
 .questions-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -51,11 +53,6 @@
     transition: transform 0.3s ease;
 }
 
-.question-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Colores específicos para cada tarjeta */
 .gray-card {
     background-color: #6A625A;
 }
@@ -76,7 +73,55 @@
     margin: 0;
 }
 
-/* Estilo del icono de flecha */
+.icon {
+    padding-top: 20%;
+    width: 67.6px;
+    height: 78.87px;
+    top: 199px;
+    left: 313px;
+    gap: 0px;
+    border: 0px 0px 0px 0px;
+    opacity: 0.2px;
+    background-size: cover;
+    background-position: center;
+}
+
+.icon-1-6 {
+    background-image: url(../../../assets/CLIENTES/iconos/icono_1_2x.png);
+}
+
+.icon-2-6 {
+    background-image: url(../../../assets/CLIENTES/iconos/icono_2_2x.png);
+    width: 100px;
+    height: 80px;
+}
+
+.icon-3-6 {
+    background-image: url(../../../assets/CLIENTES/iconos/icono_3_2x.png);
+    width: 75px;
+    height: 80px;
+}
+
+.icon-4-6 {
+    background-image: url(../../../assets/CLIENTES/iconos/icono_4_2x.png);
+    width: 80px;
+    height: 130px;
+    margin-top: -30%;
+}
+
+.icon-5-6 {
+    background-image: url(../../../assets/CLIENTES/iconos/icono_5_2x.png);
+    width: 130px;
+    height: 95px;
+    margin-left: -50%;
+}
+
+.icon-6-6 {
+    background-image: url(../../../assets/CLIENTES/iconos/icono_6_2x.png);
+    width: 80px;
+    height: 75px;
+}
+
 .icon {
     align-self: flex-end;
 }
@@ -85,4 +130,51 @@
     font-size: 1.5rem;
     color: #FFFFFF;
     font-weight: bold;
+}
+
+.question-card {
+    position: relative;
+}
+
+.question-card .display {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.display,
+.none {
+    position: absolute;
+    padding: 20px 20px;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    transition: opacity 0.5s ease;
+}
+
+.display {
+    opacity: 1;
+    z-index: 1;
+}
+
+.none {
+    opacity: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.question-card:hover .display {
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.question-card:hover .none {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+.question-card:hover .icon {
+    opacity: 0;
 }
