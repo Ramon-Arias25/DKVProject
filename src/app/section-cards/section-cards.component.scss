@@ -115,7 +115,116 @@
     text-transform: uppercase;
 }
 
-.icon-arrow {
-    font-size: 1.5rem;
+.cliente-seccion,
+.mercado-seccion,
+.marketing-seccion,
+.investigacion-seccion {
+    position: relative;
+    display: grid;
+}
+
+.section-card .arrow-icon {
+    background-image: url(../../assets/Arrow/Arrow_1x.png);
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    transition: background-image 0.3s ease;
+}
+
+.section-card:hover .arrow-icon {
+    background-image: url(../../assets/Arrow/Arrow_Hover_1x.png );
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+}
+
+.section-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.h3-cliente {
+    font-family: LEMON MILK;
+    font-size: 80px;
     font-weight: bold;
+    z-index: 1;
+    margin: 0;
+    color: #ffffff;
+    align-self: flex-start;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    line-height: 1.2;
+}
+
+.h3-mercado,
+.h3-marketing,
+.h3-investigacion {
+    font-family: LEMON MILK;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 1;
+    color: #ffffff;
+    align-self: flex-start;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    line-height: 1.2;
+}
+
+
+.section-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transition: background-color 0.3s ease;
+}
+
+.hover-text {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #ffffff;
+    z-index: 1;
+    opacity: 0;
+    align-self: flex-start;
+    margin-top: 97%;
+    max-width: 80%;
+    line-height: 1.5;
+    transition: opacity 0.3s ease;
+}
+
+.hover-text-small {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 1;
+    opacity: 0;
+    align-self: flex-start;
+    margin-top: 5%;
+    margin-bottom: 0;
+    max-width: 75%;
+    line-height: 1.5;
+    transition: opacity 0.3s ease;
+}
+
+.section-card:hover .hover-text,
+.section-card:hover .hover-text-small {
+    opacity: 1;
 }
