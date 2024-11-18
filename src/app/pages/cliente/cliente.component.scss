@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-image: url(../../../assets/CLIENTES/Cabecera_2x.png);
+    background-image: url(../../../assets/CLIENTES/Clientes_Cabecera_2x.png);
     background-size: cover;
     background-position: right;
     min-height: 240px;
@@ -21,16 +21,28 @@
 }
 
 .cliente-title {
-    font-family: Arial, sans-serif;
-    font-size: 5rem;
-    font-weight: bold;
     margin-top: 10px;
     text-transform: uppercase;
+    font-family: LEMON MILK;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 135.06px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
 
 .cliente-subtitle {
     font-size: 1.2rem;
     margin-top: 10px;
+    font-family: FS Me;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.08px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
 }
 
 .questions-grid {
@@ -87,37 +99,37 @@
 }
 
 .icon-1-6 {
-    background-image: url(../../../assets/CLIENTES/iconos/icono_1_2x.png);
+    background-image: url(../../../assets/CLIENTES/Clientes_iconos/Clientes_icono_1_2x.png);
 }
 
 .icon-2-6 {
-    background-image: url(../../../assets/CLIENTES/iconos/icono_2_2x.png);
+    background-image: url(../../../assets/CLIENTES/Clientes_iconos/Clientes_icono_2_2x.png);
     width: 100px;
     height: 80px;
 }
 
 .icon-3-6 {
-    background-image: url(../../../assets/CLIENTES/iconos/icono_3_2x.png);
+    background-image: url(../../../assets/CLIENTES/Clientes_iconos/Clientes_icono_3_2x.png);
     width: 75px;
     height: 80px;
 }
 
 .icon-4-6 {
-    background-image: url(../../../assets/CLIENTES/iconos/icono_4_2x.png);
+    background-image: url(../../../assets/CLIENTES/Clientes_iconos/Clientes_icono_4_2x.png);
     width: 80px;
     height: 130px;
     margin-top: -30%;
 }
 
 .icon-5-6 {
-    background-image: url(../../../assets/CLIENTES/iconos/icono_5_2x.png);
+    background-image: url(../../../assets/CLIENTES/Clientes_iconos/Clientes_icono_5_2x.png);
     width: 130px;
     height: 95px;
     margin-left: -50%;
 }
 
 .icon-6-6 {
-    background-image: url(../../../assets/CLIENTES/iconos/icono_6_2x.png);
+    background-image: url(../../../assets/CLIENTES/Clientes_iconos/Clientes_icono_6_2x.png);
     width: 80px;
     height: 75px;
 }
@@ -152,9 +164,17 @@
     transition: opacity 0.5s ease;
 }
 
+
 .display {
     opacity: 1;
     z-index: 1;
+    font-family: LEMON MILK;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 33.76px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
 
 .none {

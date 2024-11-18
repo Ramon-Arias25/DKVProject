@@ -7,10 +7,10 @@ import { Location } from '@angular/common';
   styleUrls: ['./cliente.component.scss']
 })
 export class ClienteComponent {
-  constructor(
-    private location: Location
-  ) { }
-  goBack() {
-    this.location.back();
-  }
+  // constructor(
+  //   private location: Location
+  // ) { }
+  // goBack() {
+  //   this.location.back();
+  // }
 }
