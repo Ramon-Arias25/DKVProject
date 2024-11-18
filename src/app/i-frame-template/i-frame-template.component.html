@@ -1,0 +1,22 @@
+<main class="iframeMain" id="iframeMain">
+    <header>
+        <a (click)="goBack()" target="_self">
+            <div class="arrow-left"></div>
+        </a>
+        <a>
+            <h2 class="unnamed-character-style-24 InvestigacionComercial" (click)="goBack()">
+                Investigación comercial
+            </h2>
+        </a>
+    </header>
+    <div class="iframe">
+        <div class="iframe-portada" id="title">
+            <p class="iframe-title">{{ iframeTitulo[this.numero] }}</p>
+        </div>
+        <div class="wrap-p">
+            <!-- <div (click)="restoreMaximizar()" class="restoreMaximizar" id="imgRestoreMaximizar"></div> -->
+            <iframe [src]="getIframeUrl()" id="iframeUno" class="maximizar-iframe"></iframe>
+        </div>
+
+    </div>
+</main>

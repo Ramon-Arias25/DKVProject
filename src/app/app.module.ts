@@ -12,6 +12,7 @@ import { HerramientasDeMarketingComponent } from './pages/herramientas-de-market
 import { EquipoDeInvestigacionComponent } from './pages/equipo-de-investigacion/equipo-de-investigacion.component';
 import { HeroComponent } from './hero/hero.component';
 import { SectionCardsComponent } from './section-cards/section-cards.component';
+import { IFrameTemplateComponent } from './i-frame-template/i-frame-template.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -34,7 +35,8 @@ const routes: Routes = [
     HerramientasDeMarketingComponent,
     EquipoDeInvestigacionComponent,
     HeroComponent,
-    SectionCardsComponent
+    SectionCardsComponent,
+    IFrameTemplateComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-mercado',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./mercado.component.scss']
 })
 export class MercadoComponent {
-
+  constructor(
+    private location: Location
+  ) { }
+  goBack() {
+    this.location.back();
+  }
 }
