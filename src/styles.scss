@@ -162,9 +162,13 @@ ul {
 
 @font-face {
     font-family: 'LEMON MILK Pro FTR';
-    src: url('../src/assets/fonts/FSMe-Bold.ttf') format('truetype');
+    src: url('../src/assets/fonts/LEMONMILKPro-Regular.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'LEMON MILK Pro Bold';
+    src: url('../src/assets/fonts/LEMONMILKPro-Bold.otf') format('truetype');
+}
 
 :root {
     ----ancho-wrap-client: 100%;
@@ -187,8 +191,9 @@ ul {
     /* Font/text values */
     /*"Arial", Sans-serif*/
     /* --unnamed-font-family-lemon-milk-pro-ftr: LEMON MILK Pro FTR;
-    --unnamed-font-family-fs-me: FS Me; 
-    --unnamed-font-family-lemon-milk-pro-ftr: Arial, Sans-serif;*/
+    --unnamed-font-family-fs-me: FS Me; */
+    --unnamed-font-family-lemon-milk-pro-bold: LEMON MILK Pro Bold;
+    --unnamed-font-family-lemon-milk-pro-ftr: LEMON MILK Pro FTR;
     --unnamed-font-family-fs-me: FS Me;
     --unnamed-font-family-georgia: Georgia;
     --unnamed-font-style-normal: normal;

@@ -1,0 +1,1 @@
+ng build --base-href https://investigacioncomercial.dkvseguros.com/ --deploy-url ./assets/
