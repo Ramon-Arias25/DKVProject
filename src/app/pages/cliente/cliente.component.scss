@@ -1,7 +1,8 @@
 /* cliente.component.css */
 
 .cliente-container {
-    max-width: 950px;
+    max-width: 1434px;
+    min-height: 340px;
     margin: auto;
     padding: 20px;
 }
@@ -47,6 +48,7 @@
 }
 
 .questions-grid {
+    width: 1434px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -56,12 +58,15 @@
 .question-card {
     position: relative;
     padding: 20px;
-    border-radius: 12px;
+    width: 461px;
+    height: 352px;
+    gap: 0px;
+    border-radius: 29px;
+    opacity: 0px;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 150px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
