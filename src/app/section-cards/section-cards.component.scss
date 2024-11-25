@@ -1,7 +1,7 @@
 .section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Columna izquierda más ancha para Clientes */
+    grid-template-rows: 2fr 2fr 1fr;
     grid-template-areas:
         "clientes mercado"
         "clientes marketing"
@@ -9,44 +9,38 @@
     row-gap: 20px;
     column-gap: 20px;
     margin: 20px;
-    /* Ajuste de márgenes para mantener un espacio exterior */
-    max-width: 100%;
+    max-height: 696px;
     align-items: stretch;
     justify-items: stretch;
 }
 
-/* Tarjeta grande para Clientes */
 .clientes-card {
     grid-area: clientes;
     background-image: url(../../assets/clientes.png);
-    border-radius: 26px;
+    border-radius: 29px;
     overflow: hidden;
     cursor: pointer;
     position: relative;
     background-size: cover;
     background-position: center;
-    min-height: 696px;
-    /* Altura mínima para mantener el tamaño original */
+
     opacity: 1;
     transition: background-image 0.3s ease-in-out;
 }
 
-/* Tarjeta para Mercado */
 .mercado-card {
+    grid-template-rows: 2fr;
     grid-area: mercado;
     background-image: url(../../assets/Recuadro_Mercado_2x.png);
-    background-size: cover;
     background-position: center;
-    border-radius: 12px;
+    border-radius: 29px;
     overflow: hidden;
     cursor: pointer;
     min-height: 242px;
-    /* Altura mínima */
     opacity: 1;
     transition: background-image 0.3s ease-in-out;
 }
 
-/* Tarjeta para Herramientas de Marketing */
 .marketing-card {
     grid-area: marketing;
     background-image: url(../../assets/Recuadro_Herramientas_2x.png);
@@ -55,24 +49,20 @@
     overflow: hidden;
     cursor: pointer;
     min-height: 242px;
-    /* Altura mínima */
-    border-radius: 12px;
+    border-radius: 29px;
     opacity: 1;
     transition: background-image 0.3s ease-in-out;
 }
 
-/* Tarjeta para Equipo de Investigación */
 .investigacion-card {
     grid-area: investigacion;
     background-image: url(../../assets/Recuadro_Equipo_2x.png);
     background-size: cover;
     background-position: center;
-    border-radius: 12px;
-    /* Redondea las esquinas inferiores */
+    border-radius: 29px;
     overflow: hidden;
     cursor: pointer;
     min-height: 162px;
-    /* Altura mínima */
     opacity: 1;
     transition: background-image 0.3s ease-in-out;
 }
@@ -124,27 +114,29 @@
 }
 
 .section-card .arrow-icon {
-    background-image: url(../../assets/Arrow/Arrow_1x.png);
-    background-size: cover;
+    background-image: url(../../assets/Arrow/Normal.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 40px;
-    height: 40px;
+    transform: rotate(315deg);
+    top: 60px;
+    right: 60px;
+    width: 70px;
+    height: 70px;
     z-index: 1;
-    transition: background-image 0.3s ease;
+    transition: background-image 0.6s ease;
 }
 
 .section-card:hover .arrow-icon {
-    background-image: url(../../assets/Arrow/Arrow_Hover_1x.png );
+    background-image: url(../../assets/Arrow/Hover.png );
     position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 40px;
-    height: 40px;
+    transform: rotate(315deg);
+    top: 60px;
+    right: 60px;
+    width: 70px;
+    height: 70px;
     z-index: 1;
+    transition: background-image 0.6s ease;
 }
 
 .section-card {
@@ -203,7 +195,7 @@
 }
 
 .hover-text {
-    font-family: Arial, sans-serif;
+    font-family: var(--unnamed-font-family-lemon-milk-pro-ftr);
     font-size: 20px;
     font-weight: normal;
     color: #ffffff;
@@ -217,15 +209,14 @@
 }
 
 .hover-text-small {
-    font-family: Arial, sans-serif;
+    font-family: var(--unnamed-font-family-lemon-milk-pro-ftr);
     font-size: 20px;
-    font-weight: bold;
     color: #ffffff;
     z-index: 1;
     opacity: 0;
     align-self: flex-start;
     margin-top: 5%;
-    margin-bottom: 0;
+    margin-bottom: 3%;
     max-width: 75%;
     line-height: 1.5;
     transition: opacity 0.3s ease;

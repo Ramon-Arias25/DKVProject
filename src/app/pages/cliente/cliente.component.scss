@@ -1,5 +1,3 @@
-/* cliente.component.css */
-
 .cliente-container {
     max-width: 1434px;
     min-height: 340px;
@@ -15,6 +13,8 @@
     background-size: cover;
     background-position: right;
     min-height: 240px;
+    min-width: 461px;
+    width: 1434px;
     padding: 30px;
     border-radius: 12px;
     color: #FFFFFF;
@@ -54,19 +54,18 @@
     gap: 20px;
 }
 
-/* Estilo base para cada tarjeta */
 .question-card {
     position: relative;
     padding: 20px;
     width: 461px;
     height: 352px;
-    gap: 0px;
+    //gap: 0px;
     border-radius: 29px;
     opacity: 0px;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -83,76 +82,93 @@
     background-color: #095751;
 }
 
-f
-
-/* Estilo de los títulos de las preguntas */
 .question-card h3 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin: 0;
+    //font-size: 1.1rem;
+    //font-weight: bold;
+    //margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 33.76px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+.icons {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    //transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 20px;
+    //gap: 17vw;
 }
 
 .icon {
-    padding-top: 20%;
-    width: 67.6px;
-    height: 78.87px;
-    top: 199px;
-    left: 313px;
-    gap: 0px;
-    border: 0px 0px 0px 0px;
-    opacity: 0.2px;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0.2px;
 }
 
 .icon-1-6 {
     background-image: url(../../../assets/CLIENTES/Clientes_iconos/Clientes_icono_1_2x.png);
+    width: 104px;
+    height: 121.35px;
+    margin-right: 1vw;
 }
 
 .icon-2-6 {
     background-image: url(../../../assets/CLIENTES/Clientes_iconos/Clientes_icono_2_2x.png);
-    width: 100px;
-    height: 80px;
+    width: 103.16px;
+    height: 104px;
 }
 
 .icon-3-6 {
     background-image: url(../../../assets/CLIENTES/Clientes_iconos/Clientes_icono_3_2x.png);
-    width: 75px;
-    height: 80px;
+    width: 143px;
+    height: 104px;
+    opacity: 0.34px;
 }
 
 .icon-4-6 {
     background-image: url(../../../assets/CLIENTES/Clientes_iconos/Clientes_icono_4_2x.png);
     width: 80px;
-    height: 130px;
-    margin-top: -30%;
+    height: 145px;
 }
 
 .icon-5-6 {
-    background-image: url(../../../assets/CLIENTES/Clientes_iconos/Clientes_icono_5_2x.png);
-    width: 130px;
-    height: 95px;
-    margin-left: -50%;
+    background-image: url(../../../assets/CLIENTES/Clientes_iconos/Clientes_icono_5.png);
+    width: 200px;
+    height: 200px;
+    margin-bottom: -20px;
+    opacity: 0px;
 }
 
 .icon-6-6 {
     background-image: url(../../../assets/CLIENTES/Clientes_iconos/Clientes_icono_6_2x.png);
-    width: 80px;
-    height: 75px;
-}
-
-.icon {
-    align-self: flex-end;
+    width: 97px;
+    height: 105px;
 }
 
 .icon-arrow {
-    font-size: 1.5rem;
-    color: #FFFFFF;
-    font-weight: bold;
-}
+    background-image: url(../../../assets/CLIENTES/Clientes_iconos/Normal.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+    transition: background-image 0.5s ease;
 
-.question-card {
-    position: relative;
 }
 
 .question-card .display {
@@ -171,7 +187,6 @@ f
     transition: opacity 0.5s ease;
 }
 
-
 .display {
     opacity: 1;
     z-index: 1;
@@ -182,10 +197,16 @@ f
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    margin-left: 1vw;
+    margin-top: 1vw;
 }
 
 .subtitle-display {
     font-family: var(----unnamed-font-family-fs-me);
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-left: 1vw;
+    margin-top: 1vw;
 }
 
 .none {
@@ -208,4 +229,14 @@ f
 
 .question-card:hover .icon {
     opacity: 0;
+}
+
+.question-card:hover .icon-arrow {
+    background-image: url(../../../assets/CLIENTES/Clientes_iconos/Hover.png);
+    transition: background-image 0.5s ease;
+}
+
+h3 {
+    margin-left: 1vw;
+    margin-top: 1vw;
 }
