@@ -1,7 +1,6 @@
-/* equipo-de-investigacion.component.css */
-
 .investigacion-container {
-    max-width: 950px;
+    max-width: 1434px;
+    min-height: 340px;
     margin: auto;
     padding: 20px;
 }
@@ -15,7 +14,7 @@
     background-position: right;
     min-height: 240px;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 30px;
     color: #FFFFFF;
     margin-bottom: 30px;
 }
@@ -25,10 +24,21 @@
     margin-top: 10px;
     text-transform: uppercase;
     font-family: var(--unnamed-font-family-lemon-milk-pro-ftr);
-    font-weight: bold;
-    font-size: 100px;
+    font-size: 78px;
+    font-weight: 400;
+    line-height: 77px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.investigacion-title-span {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: var(--unnamed-font-family-lemon-milk-pro-ftr);
+    font-size: 78px;
     font-weight: 700;
-    line-height: 135.06px;
+    line-height: 77px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -45,20 +55,6 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
-}
-
-.investigacion-title-span {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0;
-    text-transform: uppercase;
-    font-family: var(--unnamed-font-family-lemon-milk-pro-ftr);
-    font-size: 78px;
-    font-weight: 700;
-    line-height: 77px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
 .investigacion-container::after {
