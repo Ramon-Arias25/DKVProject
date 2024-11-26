@@ -45,8 +45,9 @@ export class IFrameTemplateComponent{
   /*19 */ 'https://app.powerbi.com/reportEmbed?reportId=ed9dfd2b-010e-4ed1-9836-bb235898577c&autoAuth=true&ctid=38fd77bb-cf74-4d5c-9b52-df4f93ca63db',//Perfil cliente colectivo
   // /*19 */ 'https://app.powerbi.com/reportEmbed?reportId=78c244a0-f0c2-4a1a-ad09-00a36427c819&autoAuth=true&ctid=38fd77bb-cf74-4d5c-9b52-df4f93ca63db',//Perfil cliente colectivo
   /*20 */ 'https://dkvseguros.sharepoint.com/sites/InvestigacinComercial83/Repositorio%20de%20estudios/Forms/AllItems.aspxhttps://dkvseguros.sharepoint.com/:f:/r/sites/InvestigacinComercial83/Repositorio de estudios/2024/4. BOLET%C3%8DN NOVEDADES MENSUAL?csf=1&web=1&e=YehEsR',//Noticias Sectoriales
-  /*21 */ 'https://app.powerbi.com/reportEmbed?reportId=b9e072c5-17a3-47b6-b0bf-aa41287a3298&autoAuth=true&ctid=38fd77bb-cf74-4d5c-9b52-df4f93ca63db'//Cuadro de Mando Campañas
+  /*21 */ 'https://app.powerbi.com/reportEmbed?reportId=b9e072c5-17a3-47b6-b0bf-aa41287a3298&autoAuth=true&ctid=38fd77bb-cf74-4d5c-9b52-df4f93ca63db',//Cuadro de Mando Campañas
   // /*21 */ 'https://app.powerbi.com/reportEmbed?reportId=5823f32e-a07f-4d69-8c6d-f581164cd4df&autoAuth=true&ctid=38fd77bb-cf74-4d5c-9b52-df4f93ca63db'//Cuadro de Mando Campañas
+  /*22 */  'https://dkvseguros.sharepoint.com/:x:/s/PortalInvestigacinComercialDepMarketing/EQYLxouupSFPjujru-NbE_UB-rHfo7UQl4a70dvz0ifMog?e=lyZXeQ'//CONJOINT 
 ];
 
   iframeTitulo = [
@@ -71,7 +72,8 @@ export class IFrameTemplateComponent{
     'Cifras de mercado',
     'Perfil cliente colectivo',
     'Noticias Sectoriales',
-    'Cuadro de Mando Campañas'
+    'Cuadro de Mando Campañas',
+    'CONJOINT'
   ];
 
   ngOnInit() {
