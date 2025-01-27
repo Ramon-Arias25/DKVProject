@@ -1,6 +1,6 @@
 .investigacion-container {
-    max-width: 1434px;
-    min-height: 340px;
+    width: 85vw;
+    height: 34vh;
     margin: auto;
     padding: 20px;
 }
@@ -12,7 +12,8 @@
     background-image: url(../../../assets/EQUIPO/Cabecera_2.png);
     background-size: cover;
     background-position: right;
-    min-height: 240px;
+    height: 24vh;
+    width: 90vw;
     padding: 30px;
     border-radius: 30px;
     color: #FFFFFF;
@@ -20,37 +21,38 @@
 }
 
 .investigacion-title {
-
-    margin-top: 10px;
+    margin-top: 1vh;
     text-transform: uppercase;
     font-family: var(--unnamed-font-family-lemon-milk-pro-ftr);
-    font-size: 78px;
-    font-weight: 400;
-    line-height: 77px;
+    font-weight: bold;
+    font-size: 7vh;
+    font-weight: 4vh;
+    line-height: 5vh;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 }
 
 .investigacion-title-span {
-    margin: 0;
+    margin-top: 1vh;
     text-transform: uppercase;
     font-family: var(--unnamed-font-family-lemon-milk-pro-ftr);
-    font-size: 78px;
-    font-weight: 700;
-    line-height: 77px;
+    font-weight: bold;
+    font-size: 7vh;
+    font-weight: 7vh;
+    line-height: 4vh;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 }
 
 .investigacion-subtitle {
-    font-size: 1.2rem;
-    margin-top: 10px;
+    font-size: 1rem;
+    margin-top: .1vh;
     font-family: FS Me;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 38.08px;
+    font-size: 3vh;
+    font-weight: 4vh;
+    line-height: 3vh;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;

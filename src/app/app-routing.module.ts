@@ -8,6 +8,7 @@ import { MercadoComponent } from './pages/mercado/mercado.component';
 import { HerramientasDeMarketingComponent } from './pages/herramientas-de-marketing/herramientas-de-marketing.component';
 import { EquipoDeInvestigacionComponent } from './pages/equipo-de-investigacion/equipo-de-investigacion.component';
 import { IFrameTemplateComponent } from './i-frame-template/i-frame-template.component';
+import { SectionCardsComponent } from './section-cards/section-cards.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +19,8 @@ const routes: Routes = [
   { path: 'herramientas-de-marketing', component: HerramientasDeMarketingComponent },
   { path: 'equipo-de-investigacion', component: EquipoDeInvestigacionComponent },
   { path: 'iframe/:numero', component: IFrameTemplateComponent },
+  { path: 'cards', component: SectionCardsComponent },
+  
 ];
 
 @NgModule({

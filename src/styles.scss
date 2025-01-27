@@ -607,7 +607,7 @@ div.contenedor {
 /* styles.css o app.component.css */
 .container {
     display: flex;
-    height: 100vh;
+    height: 85vh;
 }
 
 .sidebar {
@@ -635,16 +635,16 @@ div.contenedor {
     color: #007bff;
 }
 
-.content {
-    flex: 1;
-    padding: 20px;
-}
+// .content {
+//     flex: 1;
+//     padding: 0vh;
+// }
 
 /* styles.css o styles.scss */
 @font-face {
     font-family: 'LEMON MILK';
     src: url('/src/assets/fonts/LEMONMILK-Regular.otf') format('truetype');
-    font-weight: 700;
+    font-weight: 7vh;
     font-style: normal;
 }
 

@@ -6,9 +6,10 @@
         "clientes mercado"
         "clientes marketing"
         "clientes investigacion";
-    row-gap: 20px;
-    column-gap: 20px;
-    margin: 20px;
+    row-gap: 2vw;
+    column-gap: 2vw;
+    margin: 2vw;
+    height: 80vh;
     max-height: 696px;
     align-items: stretch;
     justify-items: stretch;
@@ -17,7 +18,7 @@
 .clientes-card {
     grid-area: clientes;
     background-image: url(../../assets/clientes.png);
-    border-radius: 29px;
+    border-radius: 2vh;
     overflow: hidden;
     cursor: pointer;
     position: relative;
@@ -33,10 +34,10 @@
     grid-area: mercado;
     background-image: url(../../assets/Recuadro_Mercado_2x.png);
     background-position: center;
-    border-radius: 29px;
+    border-radius: 2vh;
     overflow: hidden;
     cursor: pointer;
-    min-height: 242px;
+    min-height: 24vh;
     opacity: 1;
     transition: background-image 0.3s ease-in-out;
 }
@@ -48,8 +49,8 @@
     background-position: center;
     overflow: hidden;
     cursor: pointer;
-    min-height: 242px;
-    border-radius: 29px;
+    min-height: 24vh;
+    border-radius: 2vh;
     opacity: 1;
     transition: background-image 0.3s ease-in-out;
 }
@@ -59,10 +60,10 @@
     background-image: url(../../assets/Recuadro_Equipo_2x.png);
     background-size: cover;
     background-position: center;
-    border-radius: 29px;
+    border-radius: 2vh;
     overflow: hidden;
     cursor: pointer;
-    min-height: 162px;
+    min-height: 16vh;
     opacity: 1;
     transition: background-image 0.3s ease-in-out;
 }
@@ -99,7 +100,7 @@
 }
 
 .section-overlay h3 {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: bold;
     margin: 0;
     text-transform: uppercase;
@@ -146,7 +147,7 @@
 
 .h3-cliente {
     font-family: var(--unnamed-font-family-lemon-milk-pro-ftr);
-    font-size: 80px;
+    font-size: 6vh;
     font-weight: bold;
     z-index: 1;
     margin: 0;
@@ -163,7 +164,7 @@
 .span-marketing,
 .span-investigacion {
     font-family: var(--unnamed-font-family-lemon-milk-pro-ftr);
-    font-size: 40px;
+    font-size: 3vh;
     z-index: 1;
     color: #ffffff;
     align-self: flex-start;
@@ -192,7 +193,7 @@
 
 .hover-text {
     font-family: var(--unnamed-font-family-lemon-milk-pro-ftr);
-    font-size: 20px;
+    font-size: 2vh;
     font-weight: normal;
     color: #ffffff;
     z-index: 1;
@@ -206,7 +207,7 @@
 
 .hover-text-small {
     font-family: var(--unnamed-font-family-lemon-milk-pro-ftr);
-    font-size: 20px;
+    font-size: 1.7vh;
     color: #ffffff;
     z-index: 1;
     opacity: 0;
@@ -219,7 +220,7 @@
 }
 
 .xsmall {
-    font-size: 15px;
+    font-size: 1.5vh;
 }
 
 .section-card:hover .hover-text,
